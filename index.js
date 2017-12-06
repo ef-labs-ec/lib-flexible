@@ -1,6 +1,7 @@
 (function flexible (window, document) {
   var docEl = document.documentElement
   var dpr = window.devicePixelRatio || 1
+  var maxWidth = document.getElementsByTagName('html')[0].getAttribute('maxWidth')
 
   // adjust body font size
   function setBodyFontSize () {
@@ -14,8 +15,15 @@
   setBodyFontSize();
 
   // set 1rem = viewWidth / 10
+  // 540 is the max device width(Sony Xperia C4),
+  // found at https://material.io/devices/
+  // you can set maxWidth on html node, like <html maxWidth="560">
   function setRemUnit () {
-    var rem = docEl.clientWidth / 10
+    var clientWidth = docEl.clientWidth > 540 ? 540 : docEl.clientWidth
+    if (maxWidth) {
+      clientWidth = Number(maxWidth)
+    }
+    var rem = clientWidth / 10
     docEl.style.fontSize = rem + 'px'
   }
 

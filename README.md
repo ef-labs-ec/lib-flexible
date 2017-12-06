@@ -2,6 +2,18 @@
 
 [Classic edition (0.3.2)](https://github.com/ef-labs-ec/lib-flexible/tree/master)
 
+## 3.0 New Feature
+
+```html
+<html maxWidth="600">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
+<script src="./node_modules/efec-flexible/index.js"></script>
+</html>
+```
+
+You can set maxWidth on html to define the max device width for compute rem,
+the default value of it is `540`, which is found at [Device Table](https://material.io/devices/) 
+
 ## Usage
 
 #### Install

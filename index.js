@@ -1,7 +1,7 @@
 (function flexible (window, document) {
   var docEl = document.documentElement
   var dpr = window.devicePixelRatio || 1
-  var maxWidth = document.getElementsByTagName('html')[0].getAttribute('maxWidth')
+  var maxWidth = document.getElementsByTagName('html')[0].getAttribute('maxWidth') || 540
 
   // adjust body font size
   function setBodyFontSize () {
@@ -19,10 +19,7 @@
   // found at https://material.io/devices/
   // you can set maxWidth on html node, like <html maxWidth="560">
   function setRemUnit () {
-    var clientWidth = docEl.clientWidth > 540 ? 540 : docEl.clientWidth
-    if (maxWidth) {
-      clientWidth = Number(maxWidth)
-    }
+    var clientWidth = docEl.clientWidth > maxWidth ? maxWidth : docEl.clientWidth
     var rem = clientWidth / 10
     docEl.style.fontSize = rem + 'px'
   }

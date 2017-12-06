@@ -1,6 +1,6 @@
 {
-  "name": "amfe-flexible",
-  "version": "2.2.1",
+  "name": "efec-flexible",
+  "version": "3.0.0",
   "description": "Build flexible page on mobile platform",
   "keywords": [
     "lib",
@@ -11,15 +11,19 @@
     "rem",
     "vw"
   ],
-  "homepage": "https://github.com/amfe/lib-flexible",
+  "homepage": "https://github.com/ef-labs-ec/lib-flexible",
   "repository": {
     "type": "git",
-    "url": "git@github.com:amfe/lib-flexible.git"
+    "url": "git@github.com:ef-labs-ec/lib-flexible.git"
   },
   "author": [
     {
       "name": "mingelz",
       "email": "mingelz@gmail.com"
+    },
+    {
+      "name": "Kuma Li",
+      "email": "li.jun.kuma@gmail.com"
     }
   ],
   "scripts": {

@@ -1,18 +1,18 @@
-# amfe-flexible
+# efec-flexible fork from amfe-flexible
 
-[Classic edition (0.3.2)](https://github.com/amfe/lib-flexible/tree/master)
+[Classic edition (0.3.2)](https://github.com/ef-labs-ec/lib-flexible/tree/master)
 
 ## Usage
 
 #### Install
 
-`npm i -S amfe-flexible`
+`npm i -S efec-flexible`
 
 #### Import
 
 ```html
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no">
-<script src="./node_modules/amfe-flexible/index.js"></script>
+<script src="./node_modules/efec-flexible/index.js"></script>
 ```
 
 You can inline this file with [inline-source](https://npmjs.org/package/inline-source).
@@ -25,7 +25,7 @@ Use [postcss-adaptive](https://www.npmjs.com/package/postcss-adaptive).
 
 (The MIT License)
 
-Copyright (c) 2016 Alibaba MFE
+Copyright (c) 2016 EF-LABS-EC FE
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the 'Software'), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
